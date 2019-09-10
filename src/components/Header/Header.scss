@@ -1,0 +1,29 @@
+@import '../../scss/variables.scss';
+
+.header {
+  width: 100%;
+  height: 80px;
+  background: $background-color;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+
+  .logo {
+    width: 100px;
+    height: 70%;
+    margin: auto 0;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+
+  li {
+    color: #FFF;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+}

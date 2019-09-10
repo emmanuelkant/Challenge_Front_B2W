@@ -1,0 +1,32 @@
+@import '../../scss/variables.scss';
+@import '../../scss/saber-war.scss';
+
+.loading {
+  height: 100%;
+  background: #5D4BCC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .battlefield {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  img {
+    width: 60px;
+  }
+
+  .slb {
+    -webkit-animation: saber-war-blue 2s infinite; /* Safari 4.0 - 8.0 */
+    animation: saber-war-blue 2s infinite;
+  }
+
+  .slr {
+    -webkit-animation: saber-war-red 2s infinite; /* Safari 4.0 - 8.0 */
+    animation: saber-war-red 2s infinite;
+  }
+
+}
