@@ -1,5 +1,61 @@
-@import '../../scss/variables.scss';
+@import '../../scss/glowing.scss';
 
 .button {
+  padding: 15px;
+  margin: 0px 15px;
+  background: rgba(0, 0, 0, 0);
+  border: none;
+  cursor: pointer;
+  position: relative;
 
+  a {
+    color: #FFF;
+    font-size: 20px;
+  }
+
+  &:after {
+    transition: all .2s ease-out;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 5px;
+    background: #FFF;
+    display: block;
+    border-radius: 25px;
+    box-shadow: inset 0 0 8px rgb(255, 0, 0), 0 0 8px rgb(255, 99, 99);
+  }
+
+  &:before {
+    transition: all .2s ease-out;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 5px;
+    background: #FFF;
+    display: block;
+    border-radius: 25px;
+    box-shadow: inset 0 0 8px rgb(255, 0, 0), 0 0 8px rgb(255, 99, 99);
+  }
+
+  &:hover {
+
+    &:after {
+      width: 100%;
+      box-shadow: inset 0 0 8px rgb(255, 0, 0), 0 0 8px rgb(255, 99, 99);
+      animation: glowing 1.5s infinite;
+      -webkit-animation: glowing 1.5s infinite;
+    }
+
+    &:before {
+      width: 100%;
+      box-shadow: inset 0 0 8px rgb(255, 0, 0), 0 0 8px rgb(255, 99, 99);
+      animation: glowing 1.5s infinite;
+      -webkit-animation: glowing 1.5s infinite;
+    }
+
+  }
 }

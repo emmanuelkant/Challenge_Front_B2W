@@ -1,25 +1,23 @@
 import React from 'react';
 import './Home.scss';
 
-import { Link } from 'react-router-dom';
+import Button from '../../components/Button';
 
 export default function Home() {
   return (
     <section className="home">
       <div className="container">
-        <h1>Which's that planet?</h1>
-        <p>from George Lucas mind</p>
+        <h1>What is that planet?</h1>
+        <p>from George Lucas' mind</p>
         <div>
-          <button
-            type="button"
-          >
-            <Link to="/planet">Start Game</Link>
-          </button>
-          <button
-            type="button"
-          >
-            <Link to="/planet">About</Link>
-          </button>
+          <Button 
+            path="/planet"
+            label="Start Game"
+          />
+          <Button 
+            path="/about"
+            label="About"
+          />
         </div>
       </div>
     </section>

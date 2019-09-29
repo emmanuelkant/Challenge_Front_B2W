@@ -11,9 +11,16 @@
 html, body, #root {
   height: 100%;
   background-color: $background-color;
-  position: relative;
 }
 
 body, input, button {
   font-family: 'Roboto', Helvetica, sans-serif;
+}
+
+a:link, 
+a:hover, 
+a:visited, 
+a:active {
+  text-decoration: none;
+  color: black;
 }

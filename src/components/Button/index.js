@@ -1,12 +1,15 @@
 import React from 'react';
 import './Button.scss';
 
-export default function Button() {
+import { Link } from 'react-router-dom';
+
+export default function Button(props) {
   return (
-    <section className="header"> 
-      <ul>
-        <li>About</li>
-      </ul>
-    </section>
+    <button
+      type="button"
+      className="button"
+    >
+      <Link to={props.path}>{props.label}</Link>
+    </button>
   );
 }
