@@ -11,7 +11,7 @@ export default function Home() {
         <p>from George Lucas' mind</p>
         <div>
           <Button 
-            path="/planet"
+            path="/game"
             label="Start Game"
           />
           <Button 

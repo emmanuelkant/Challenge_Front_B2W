@@ -2,13 +2,13 @@ import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 
 import Home from '../src/pages/Home';
-import Planet from '../src/pages/Planet';
+import Game from '../src/pages/Game';
 
 export default function Routes() {
   return (
     <BrowserRouter>
       <Route path="/" exact component={Home} />
-      <Route path="/planet" component={Planet} />
+      <Route path="/game" component={Game} />
     </BrowserRouter>
   )
 }
