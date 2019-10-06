@@ -7,11 +7,8 @@
   border: none;
   cursor: pointer;
   position: relative;
-
-  a {
-    color: #FFF;
-    font-size: 20px;
-  }
+  color: #FFF;
+  font-size: 20px;
 
   &:after {
     transition: all .2s ease-out;

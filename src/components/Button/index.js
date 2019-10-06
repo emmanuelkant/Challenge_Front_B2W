@@ -4,12 +4,23 @@ import './Button.scss';
 import { Link } from 'react-router-dom';
 
 export default function Button(props) {
-  return (
+
+  return props.link ? (
+    <Link to={props.path}>
+      <button
+        type="button"
+        className="button"
+      >
+        {props.label}
+      </button>
+    </Link>
+  ) : (
     <button
       type="button"
       className="button"
+      onClick={props.click}
     >
-      <Link to={props.path}>{props.label}</Link>
+      {props.label}
     </button>
-  );
+  )
 }

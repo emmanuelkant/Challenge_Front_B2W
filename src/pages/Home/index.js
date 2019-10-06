@@ -11,10 +11,12 @@ export default function Home() {
         <p>from George Lucas' mind</p>
         <div>
           <Button 
+            link={true}
             path="/game"
             label="Start Game"
           />
-          <Button 
+          <Button
+            link={true}
             path="/about"
             label="About"
           />

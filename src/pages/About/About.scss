@@ -1,0 +1,55 @@
+@import '../../scss/variables.scss';
+@import '../../scss/glowingSabersAbout.scss';
+
+.about {
+  height: 100%;
+  background-color: #000;
+  background: $background-grandient;
+  color: $yellow;
+  
+  .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    h1 {
+      font-size: 35px;
+      text-align: center;
+      padding: 20px 0px;
+      margin: 40px 0;
+      position: relative;
+
+      &::before {
+        content: '';
+        transition: all ease-in-out 2s;
+        width: 0%;
+        height: 10px;
+        background: red;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 3px 10px 10px 3px;
+        animation: glowing-red-saber 1.5s infinite, grow 0.5s ease-in-out 1s 1 normal forwards;
+        -webkit-animation: glowing-red-saber 1.5s infinite, grow 0.5s ease-in-out 1s 1 normal forwards;
+      }
+
+      &::after {
+        content: '';
+        transition: all ease-in-out 2s;
+        height: 10px;
+        background: rgb(70, 166, 255);
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        border-radius: 10px 3px 3px 10px;
+        animation: glowing-blue-saber 1.5s infinite, grow 0.5s ease-in-out 1.5s 1 normal forwards;
+        -webkit-animation: glowing-blue-saber 1.5s infinite, grow 0.5s ease-in-out 1.5s 1 normal forwards;
+      }
+
+    }
+
+  }
+
+}

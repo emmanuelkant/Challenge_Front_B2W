@@ -1,0 +1,68 @@
+@keyframes glowing-red-saber {
+  0% {
+    box-shadow: inset 0 0 8px rgb(255, 0, 0), 0 0 8px rgb(255, 99, 99);
+  }
+  50% {
+    box-shadow: inset 0 0 15px rgb(255, 0, 0), 0 0 15px rgb(255, 99, 99);
+  }
+  100% {
+    box-shadow: inset 0 0 8px rgb(255, 0, 0), 0 0 8px rgb(255, 99, 99);
+  }
+}
+
+@-webkit-keyframes glowing-red-saber {
+  0% {
+    box-shadow: inset 0 0 8px rgb(255, 0, 0), 0 0 8px rgb(255, 99, 99);
+  }
+  50% {
+    box-shadow: inset 0 0 15px rgb(255, 0, 0), 0 0 15px rgb(255, 99, 99);
+  }
+  100% {
+    box-shadow: inset 0 0 8px rgb(255, 0, 0), 0 0 8px rgb(255, 99, 99);
+  }
+}
+
+
+@keyframes glowing-blue-saber {
+  0% {
+    box-shadow: inset 0 0 8px rgb(70, 166, 255), 0 0 8px rgb(99, 99, 255);
+  }
+  50% {
+    box-shadow: inset 0 0 15px rgb(70, 166, 255), 0 0 15px rgb(99, 99, 255);
+  }
+  100% {
+    box-shadow: inset 0 0 8px rgb(70, 166, 255), 0 0 8px rgb(99, 99, 255);
+  }
+}
+
+@-webkit-keyframes glowing-blue-saber {
+  0% {
+    box-shadow: inset 0 0 8px rgb(70, 166, 255), 0 0 8px rgb(99, 99, 255);
+  }
+  50% {
+    box-shadow: inset 0 0 15px rgb(70, 166, 255), 0 0 15px rgb(99, 99, 255);
+  }
+  100% {
+    box-shadow: inset 0 0 8px rgb(70, 166, 255), 0 0 8px rgb(99, 99, 255);
+  }
+}
+
+
+@keyframes grow {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes grow {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
