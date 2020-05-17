@@ -5,6 +5,6 @@
 Fast script here 
 
 ```
-cd ~ && mkdir test-emmanuel && cd test-emmanuel && git clone https://github.com/emmanuelkant/Challenge_Front_B2W.git . && npm install && npm run
+cd ~ && mkdir test-emmanuel && cd test-emmanuel && git clone https://github.com/emmanuelkant/Challenge_Front_B2W.git . && npm install && npm start
 
 ```
