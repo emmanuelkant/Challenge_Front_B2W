@@ -4,7 +4,7 @@ import './Button.scss';
 import { Link } from 'react-router-dom';
 
 export default function Button(props) {
-  console.log('Test github vscode');
+
   return props.link ? (
     <Link to={props.path}>
       <button
